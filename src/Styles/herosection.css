@@ -1,0 +1,106 @@
+.hero {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBtYhAxq2FdEXmL3wgK33bkO9__ig8FafguA&s');
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    padding: 15rem 20rem 15rem 5rem;
+    /* min-height: 100vh; */
+  }
+  
+  
+  .hero-content h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-buttons .btn {
+    background-color: #0aad57;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .hero-buttons .find-talent-btn {
+    background-color: #0a7ccd;
+  }
+  .hero-buttons .btn:hover{
+    background-color: #008d60;
+  }
+  .hero-buttons .find-talent-btn:hover{
+    background-color: #07568f;
+  }
+
+  /* Responsive Design */
+@media (max-width: 1200px) {
+  .hero {
+    padding: 10rem 30rem 10rem 5rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 0.8rem;
+  }
+
+  .hero-buttons .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    display: block;
+    margin: 0.5rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 8rem 5rem 8rem 5rem; /* Reduce padding for smaller screens */
+  }
+
+  .hero-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content p {
+    font-size: 0.7rem;
+  }
+
+  .hero-buttons .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.7rem;
+    display: block;
+    /* width: 100%; Make buttons stack vertically */
+    margin: 0.5rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 6rem 5rem 6rem 3rem; /* Adjust padding for very small screens */
+  }
+
+  .hero-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero-content p {
+    font-size: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-buttons .btn {
+    padding: 0.5rem;
+    font-size: 0.5rem;
+  }
+}

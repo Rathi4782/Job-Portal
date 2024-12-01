@@ -1,0 +1,68 @@
+.search-section {
+    background-color: #0aad57;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-bar {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    width: 100%; 
+  max-width: 700px;
+  }
+  
+  .search-bar input,
+  .search-bar select,
+  .search-bar button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .search-bar input {
+    flex: 1;
+  }
+  
+  .search-bar button {
+    background-color: #00332e;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* Responsive Design */
+@media (max-width: 700px) {
+  .search-bar {
+    flex-direction: column; /* Stack the items vertically */
+    gap: 1rem; /* Add space between items */
+  }
+
+  .search-bar input,
+  .search-bar select,
+  .search-bar button {
+    width: 400px; /* Make the input, selects, and button take full width */
+    padding: 0.75rem 1rem; /* Adjust padding for better touch targets */
+    font-size: 0.8rem; /* Reduce font size for smaller screens */
+  }
+
+  .search-bar button {
+    background-color: #00332e; /* Darken the button for better contrast */
+  }
+}
+
+@media (max-width: 450px) {
+
+  .search-bar input,
+  .search-bar select,
+  .search-bar button {
+    width: 100%; 
+    font-size: 0.6rem; /* Further reduce font size for very small screens */
+    padding: 0.5rem 0.75rem; /* Adjust padding to fit small screens */
+  }
+
+  .search-bar button {
+    background-color: #00201b; /* Darker background for contrast */
+  }
+}
